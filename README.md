@@ -1,0 +1,1 @@
+# curator-spring-boot-starter
