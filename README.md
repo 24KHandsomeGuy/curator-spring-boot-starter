@@ -1,2 +1,1 @@
-# curator-spring-boot-starter
-curator springboot starter
+#curator spring boot starter

@@ -1,0 +1,106 @@
+{
+  "properties": [
+    {
+      "name": "curator.connect-string",
+      "type": "java.lang.String",
+      "description": "zookeeper服务地址列表",
+      "defaultValue": "localhost:2181"
+    },
+    {
+      "name": "curator.session-timeout-ms",
+      "type": "java.lang.Integer",
+      "description": "zookeeper的会话超时时间",
+      "defaultValue": "60000"
+    },
+    {
+      "name": "curator.connection-timeout-ms",
+      "type": "java.lang.Integer",
+      "description": "zookeeper的连接超时时间",
+      "defaultValue": "15000"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.RetryOneTimeProperties",
+      "name": "curator.retry-policy-configuration.retry-one-time.sleep-ms-between-retry",
+      "defaultValue": "5000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、尝试一次、重试的时间间隔"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.RetryNTimesProperties",
+      "name": "curator.retry-policy-configuration.retry-n-times.n",
+      "defaultValue": "3",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、尝试N次、重试的次数"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.RetryNTimesProperties",
+      "name": "curator.retry-policy-configuration.retry-n-times.sleep-ms-between-retries",
+      "defaultValue": "5000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、尝试N次、重试的时间间隔"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.RetryUntilElapsedProperties",
+      "name": "curator.retry-policy-configuration.retry-until-elapsed.max-elapsed-time-ms",
+      "defaultValue": "60000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、重试直至消亡、最大存活时间"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.RetryUntilElapsedProperties",
+      "name": "curator.retry-policy-configuration.retry-until-elapsed.sleep-ms-between-retries",
+      "defaultValue": "5000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、重试直至消亡、重试的时间间隔"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.RetryForeverProperties",
+      "name": "curator.retry-policy-configuration.retry-forever.retry-interval-ms",
+      "defaultValue": "5000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、一直重试、重试的时间间隔"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.ExponentialBackoffRetryProperties",
+      "name": "curator.retry-policy-configuration.exponential-backoff-retry.base-sleep-time-ms",
+      "defaultValue": "5000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、指数衰减重试、基准的重试时间间隔"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.ExponentialBackoffRetryProperties",
+      "name": "curator.retry-policy-configuration.exponential-backoff-retry.max-retries",
+      "defaultValue": "3",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、指数衰减重试、最大重试次数"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.ExponentialBackoffRetryProperties",
+      "name": "curator.retry-policy-configuration.exponential-backoff-retry.max-sleep-ms",
+      "defaultValue": "60000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、指数衰减重试、最大睡眠时长"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.BoundedExponentialBackoffRetryProperties",
+      "name": "curator.retry-policy-configuration.bounded-exponential-backoff-retry.base-sleep-time-ms",
+      "defaultValue": "5000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、有界指数衰减重试、基准的重试时间间隔"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.BoundedExponentialBackoffRetryProperties",
+      "name": "curator.retry-policy-configuration.bounded-exponential-backoff-retry.max-retries",
+      "defaultValue": "3",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、有界指数衰减重试、最大重试次数"
+    },
+    {
+      "sourceType": "com.damon.spring.boot.autoconfigure.properties.BoundedExponentialBackoffRetryProperties",
+      "name": "curator.retry-policy-configuration.bounded-exponential-backoff-retry.max-sleep-time-ms",
+      "defaultValue": "60000",
+      "type": "java.lang.Integer",
+      "description": "连接重试策略、有界指数衰减重试、最大睡眠时长"
+    }
+  ]
+}
